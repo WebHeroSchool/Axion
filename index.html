@@ -8,24 +8,31 @@
 	</title>
 </head>
 <body> 
-	<nav class="menu">
-		<!-- Использую nav, чтобы создать верхнюю менюшку и даю линкам классы для того, чтобы оформить позже -->
-		<a class="menu__link" href="/">shop</a>
-		<a class="menu__link" href="/">news</a>
-		<a class="menu__link" href="/">team</a>
-		<a class="menu__link" href="/">legacy</a>
-		<a class="menu__link" href="/">help</a>
-		<form> 
+	<div class="panel">
+		<div class="panel__logo">
+			<img src="pics/Axion-logo-1.png">
+		</div>
+		<nav class="panel__menu">
+			<!-- Использую nav, чтобы создать верхнюю менюшку и даю линкам классы для того, чтобы оформить позже -->
+			<a class="menu__link" href="/">shop</a>
+			<a class="menu__link" href="/">news</a>
+			<a class="menu__link" href="/">team</a>
+			<a class="menu__link" href="/">legacy</a>
+			<a class="menu__link" href="/">help</a>
+		</nav>
+		<form class="panel__search"> 
 			<!-- Можно использовать форму ввода для поиска, правда пока что не разобралась как сделать кнопку поиска внутри окошка, равно как и сделать кнопку лупой, кроме как вставить маленькую картинку -->
 			<input type="search" name="search-area">
-			<input type="image" name="search-button" src="http://prntscr.com/mh2ijy" alt="Search">
+			<input type="image" name="search-button" src="pics/Vector.png" alt="Search">
 		</form>
-		<a class="menu__link" href="/">sign in</a>
-		<a class="menu__link" href="/">cart
-			<span class="menu__cart-items">1</span>
-		</a>
-		<a href="/"><img src="http://prntscr.com/mh2m20" alt="Eng version"></a>
-	</nav>
+		<div class="panel__side">
+			<a class="side__login" href="/">sign in</a>
+			<a class="side__cart" href="/">cart
+				<span class="side__cart--items">1</span>
+			</a>
+			<a href="/"><img src="pics/us-flag.png" alt="Eng version" style="width:21px;height:14px;"></a>
+		</div>
+	</div>
 	<header class="header">
 		<!-- После меню будет хэдэр, если это легитимно. Хочу подразделить контент семантично, насколько это возможно. -->
 		<h1 class="header__title">
@@ -45,7 +52,7 @@
 		<!-- Планирую разместить дальнейшие content__items  помощью display: inline-block, а между ними вставить разделители -->
 		<div class="content__items">
 			<!-- внутри каждого инлайн-блока будет структура в флексе или в гриде (?) -->
-			<img class="content__pic" src="https://goo.gl/P41m4P" alt="">
+			<img class="content__items--pic" src="pics/foot1.png" alt="">
 			<div class="content__items--name">Atlas Black/Rasta Axion</div>
 			<div class="content__items--price">$89.00</div>
 			<div class="content__items--select">
@@ -57,7 +64,7 @@
 			</div>
 		</div>
 		<div class="content__items">
-			<img class="content__pic" src="https://goo.gl/gPH8R6" alt="">
+			<img class="content__items--pic" src="pics/foot2.png" alt="">
 			<div class="content__items--name">Camel/Chili Pepper Axion</div>
 			<div class="content__items--price">$74.00</div>
 			<div class="content__items--select">
@@ -68,7 +75,7 @@
 			</div>
 		</div>
 		<div class="content__items">
-			<img class="content__pic" src="https://goo.gl/jMB9AH" alt="">
+			<img class="content__items--pic" src="pics/foot3.png" alt="">
 			<div class="content__items--name">Mandel Smoke/Rust Axion</div>
 			<div class="content__items--price">$69.00</div>
 			<div class="content__items--select">
@@ -79,7 +86,7 @@
 			</div>
 		</div>
 		<div class="content__items">
-			<img class="content__pic" src="https://goo.gl/sTTTxS" alt="">
+			<img class="content__items--pic" src="pics/foot4.png" alt="">
 			<div class="content__items--name">Cloud/Elecric Blue Axion</div>
 			<div class="content__items--price">$69.00</div>
 			<div class="content__items--select">
@@ -93,7 +100,7 @@
 	<section class="content__block">
 		<div class="content__block--pic">
 			<!-- Не нашла варианта лучше, кроме как смоделить видео картинкой -->
-			<img src="http://prntscr.com/mh33g8">
+			<img src="pics/video.png">
 		</div>
 		<div class="content__block--text">
 			<!-- Рядом будет спозиционирован блок с текстом -->
@@ -116,7 +123,7 @@
 			Recent stories
 		</h2>
 		<div class="content__first">
-			<img class="content__pic" src="http://prntscr.com/mh36e3" alt="">
+			<img class="content__pic" src="pics/anagoa.png" alt="">
 			<h3 class="content__subtitle">
 				Presents Justin Anagoa
 			</h3>
@@ -131,7 +138,7 @@
 			</div>
 		</div>
 		<div class="content__second">
-			<img class="content__pic" src="" alt="">
+			<img class="content__pic" src="pics/reynoldes.png" alt="">
 			<h3 class="content__subtitle">
 				First Frontside flip
 			</h3>
@@ -146,7 +153,7 @@
 			</div>
 		</div>
 		<div class="content__third">
-			<img class="content__pic" src="" alt="">
+			<img class="content__pic" src="pics/baekkel.png" alt="">
 			<h3 class="content__subtitle">
 				Kevin Baekkel is Pro
 			</h3>
@@ -163,8 +170,15 @@
 	</section>
 	<section class="gallery">
 		<div class="gallery__tag">#axionfootwear</div>
-		<div class="gallery__pic">
-			<!-- Пока думаю над тем, как вставить картинки. Наверное, лучше прямо сюда -->
+		<div class="gallery__pics">
+			<!-- Вставила картинки просто так, чтобы в будущем отформатировать внутри контейнера -->
+			<img src="pics/gal1.png" alt="">
+			<img src="pics/gal2.png" alt="">
+			<img src="pics/gal3.png" alt="">
+			<img src="pics/gal4.png" alt="">
+			<img src="pics/gal5.png" alt="">
+			<img src="pics/gal6.png" alt="">
+			<img src="pics/gal7.png" alt="">
 		</div>
 	</section>
 	<footer class="footer">
@@ -261,6 +275,11 @@
 		<address class="footer__address">
 			© 2019 Axion. All rights reserved.
 		</address>
+		<div class="footer__sign">
+			<div class="footer__sign--1">Разработано в</div>
+			<div class="footer__sign--2">WebHero</div>
+			<div class="footer__sign--3">School</div>
+		</div>
 	</footer>
 </body>
 </html>
