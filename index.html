@@ -6,29 +6,29 @@
 	<title>
 		Axion
 	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body> 
 	<div class="panel">
-		<div class="panel__logo">
+		<div class="logo">
 			<img src="pics/Axion-logo-1.png">
 		</div>
-		<nav class="panel__menu">
-			<!-- Использую nav, чтобы создать верхнюю менюшку и даю линкам классы для того, чтобы оформить позже -->
+		<nav class="menu">
 			<a class="menu__link" href="/">shop</a>
 			<a class="menu__link" href="/">news</a>
 			<a class="menu__link" href="/">team</a>
 			<a class="menu__link" href="/">legacy</a>
 			<a class="menu__link" href="/">help</a>
 		</nav>
-		<form class="panel__search"> 
+		<form class="search"> 
 			<!-- Можно использовать форму ввода для поиска, правда пока что не разобралась как сделать кнопку поиска внутри окошка, равно как и сделать кнопку лупой, кроме как вставить маленькую картинку -->
 			<input type="search" name="search-area">
 			<input type="image" name="search-button" src="pics/Vector.png" alt="Search">
 		</form>
-		<div class="panel__side">
-			<a class="side__login" href="/">sign in</a>
-			<a class="side__cart" href="/">cart
-				<span class="side__cart--items">1</span>
+		<div class="profile">
+			<a class="profile__login" href="/">sign in</a>
+			<a class="profile__cart" href="/">cart
+				<!--Хочу позже убрать эту строку в CSS и сделать число псевдоэлементом after <span class="profile__cart-items">1</span> -->
 			</a>
 			<a href="/"><img src="pics/us-flag.png" alt="Eng version" style="width:21px;height:14px;"></a>
 		</div>
@@ -39,7 +39,7 @@
 			<!-- Самый крупный заголовок -->
 			Legendary footwear reborn.
 		</h1>
-		<div class="header__subtitle">
+		<div class="header__subtitle __link">
 			<!-- Субзаголовок, здесь предполагается каким-то образом (загуглю) с помощью псевдоэлемента after вставить стрелку, нарисованную в CSS. надеюсь, это вообще возможно? -->
 			shop now
 		</div>
@@ -52,118 +52,118 @@
 		<!-- Планирую разместить дальнейшие content__items  помощью display: inline-block, а между ними вставить разделители -->
 		<div class="content__items">
 			<!-- внутри каждого инлайн-блока будет структура в флексе или в гриде (?) -->
-			<img class="content__items--pic" src="pics/foot1.png" alt="">
-			<div class="content__items--name">Atlas Black/Rasta Axion</div>
-			<div class="content__items--price">$89.00</div>
-			<div class="content__items--select">
+			<img class="content__pic" src="pics/foot1.png" alt="">
+			<div class="content__name">Atlas Black/Rasta Axion</div>
+			<div class="content__price">$89.00</div>
+			<div class="content__color">
 				<!-- эти элементы вероятно нужно будет споиционировать справа -->
-				<a href=""><span class="content__items--select--grey"></span></a>
-				<a href=""><span class="content__items--select--black"></span></a>
-				<a href=""><span class="content__items--select--red"></span></a>
-				<a href=""><span class="content__items--select--yellow"></span></a>
+				<a href=""><span class="content__color content__color--grey"></span></a>
+				<a href=""><span class="content__color content__color--black"></span></a>
+				<a href=""><span class="content__color content__color--red"></span></a>
+				<a href=""><span class="content__color content__color--yellow"></span></a>
 			</div>
 		</div>
 		<div class="content__items">
-			<img class="content__items--pic" src="pics/foot2.png" alt="">
-			<div class="content__items--name">Camel/Chili Pepper Axion</div>
-			<div class="content__items--price">$74.00</div>
-			<div class="content__items--select">
-				<a href=""><span class="content__items--select--grey"></span></a>
-				<a href=""><span class="content__items--select--beige"></span></a>
-				<a href=""><span class="content__items--select--red"></span></a>
-				<a href=""><span class="content__items--select--yellow"></span></a>
+			<img class="content__pic" src="pics/foot2.png" alt="">
+			<div class="content__name">Camel/Chili Pepper Axion</div>
+			<div class="content__price">$74.00</div>
+			<div class="content__color">
+				<a href=""><span class="content__color content__color--grey"></span></a>
+				<a href=""><span class="content__color content__color--beige"></span></a>
+				<a href=""><span class="content__color content__color--red"></span></a>
+				<a href=""><span class="content__color content__color--yellow"></span></a>
 			</div>
 		</div>
 		<div class="content__items">
-			<img class="content__items--pic" src="pics/foot3.png" alt="">
-			<div class="content__items--name">Mandel Smoke/Rust Axion</div>
-			<div class="content__items--price">$69.00</div>
-			<div class="content__items--select">
-				<a href=""><span class="content__items--select--grey"></span></a>
-				<a href=""><span class="content__items--select--brown"></span></a>
-				<a href=""><span class="content__items--select--navy"></span></a>
-				<a href=""><span class="content__items--select--yellow"></span></a>
+			<img class="content__pic" src="pics/foot3.png" alt="">
+			<div class="content__name">Mandel Smoke/Rust Axion</div>
+			<div class="content__price">$69.00</div>
+			<div class="content__color">
+				<a href=""><span class="content__color content__color--grey"></span></a>
+				<a href=""><span class="content__color content__color--brown"></span></a>
+				<a href=""><span class="content__color content__color--navy"></span></a>
+				<a href=""><span class="content__color content__color--yellow"></span></a>
 			</div>
 		</div>
 		<div class="content__items">
-			<img class="content__items--pic" src="pics/foot4.png" alt="">
-			<div class="content__items--name">Cloud/Elecric Blue Axion</div>
-			<div class="content__items--price">$69.00</div>
-			<div class="content__items--select">
-				<a href=""><span class="content__items--select--grey"></span></a>
-				<a href=""><span class="content__items--select--blue"></span></a>
-				<a href=""><span class="content__items--select--red"></span></a>
-				<a href=""><span class="content__items--select--yellow"></span></a>
+			<img class="content__pic" src="pics/foot4.png" alt="">
+			<div class="content__name">Cloud/Elecric Blue Axion</div>
+			<div class="content__price">$69.00</div>
+			<div class="content__color">
+				<a href=""><span class="content__color content__color--grey"></span></a>
+				<a href=""><span class="content__color content__color--blue"></span></a>
+				<a href=""><span class="content__color content__color--red"></span></a>
+				<a href=""><span class="content__color content__color--yellow"></span></a>
 			</div>
 		</div>
 	</section>
-	<section class="content__block">
-		<div class="content__block--pic">
+	<section class="promo">
+		<div class="promo__video">
 			<!-- Не нашла варианта лучше, кроме как смоделить видео картинкой -->
 			<img src="pics/video.png">
 		</div>
-		<div class="content__block--text">
+		<div class="promo__text">
 			<!-- Рядом будет спозиционирован блок с текстом -->
-			<h2 class="content__title content--white">
+			<h2 class="promo__title __title --white">
 				<!-- у заголовка и у текста будет одинаковый класс со следующей секцией для простоты верстки, но здесь добавим белый цвет -->
 				Legendary footware reborn
 			</h2>
-			<div class="content__text content--white">
+			<div class="promo__text --white">
 				We are a brand with a historyand are relaunching for 2019. We've been a part of the skater's family ever since it's early teenage years. And now we presentate a new footware collection.
 			</div>
-			<div class="content__link content--white">
+			<div class="promo__link __link --white">
 				<!-- после линка опять псевдоэл. со стрелкой -->
 				learn more
 			</div>
 		</div>
 	</section>
-	<section class="content__block--2">
+	<section class="stories">
 		<!-- Можно ли все это сверстать с помощью флекса? -->
-		<h2 class="content__title">
+		<h2 class="stories__title __title">
 			Recent stories
 		</h2>
-		<div class="content__first">
-			<img class="content__pic" src="pics/anagoa.png" alt="">
-			<h3 class="content__subtitle">
+		<div class="stories__first">
+			<img class="stories__pic" src="pics/anagoa.png" alt="">
+			<h3 class="stories__subtitle">
 				Presents Justin Anagoa
 			</h3>
-			<div class="content__text">
+			<div class="stories__text">
 				Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
 			</div>
-			<div class="content__link">
+			<div class="stories__link __link">
 				learn more
 			</div>
-			<div class="content__date">
+			<div class="stories__date">
 				11.08.2018
 			</div>
 		</div>
-		<div class="content__second">
-			<img class="content__pic" src="pics/reynoldes.png" alt="">
-			<h3 class="content__subtitle">
+		<div class="stories__second">
+			<img class="stories__pic" src="pics/reynoldes.png" alt="">
+			<h3 class="stories__subtitle">
 				First Frontside flip
 			</h3>
-			<div class="content__text">
+			<div class="stories__text">
 				Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.
 			</div>
-			<div class="content__link">
+			<div class="stories__link">
 				learn more
 			</div>
-			<div class="content__date">
+			<div class="stories__date">
 				17.08.2018
 			</div>
 		</div>
-		<div class="content__third">
-			<img class="content__pic" src="pics/baekkel.png" alt="">
-			<h3 class="content__subtitle">
+		<div class="stories__third">
+			<img class="stories__pic" src="pics/baekkel.png" alt="">
+			<h3 class="stories__subtitle">
 				Kevin Baekkel is Pro
 			</h3>
-			<div class="content__text">
+			<div class="stories__text">
 				Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.
 			</div>
-			<div class="content__link">
+			<div class="stories__link">
 				learn more
 			</div>
-			<div class="content__date">
+			<div class="stories__date">
 				29.07.2018
 			</div>
 		</div>
@@ -183,83 +183,83 @@
 	</section>
 	<footer class="footer">
 		<!-- Насчет меню сомневалась, но решила сделать списком, потому что nav здесь не катит -->
-		<div class="footer__menu--1">
-			<ul class="footer__menu">
+		<div class="footer-menu footer-menu--1">
+			<ul class="footer-menu footer-menu--1 my-account">
 				<li>
-					<a class="footer__menu--title" href="">My account</a>
+					<a class="footer-menu__title my-account__title" href="">My account</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Login</a>
+					<a class="footer-menu__link my-account__link" href="">Login</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Wish List</a>
+					<a class="footer-menu__link my-account__link" href="">Wish List</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Order History</a>
+					<a class="footer-menu__link my-account__link" href="">Order History</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Track Order</a>
+					<a class="footer-menu__link my-account__link" href="">Track Order</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Gift cards</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer__menu--2">
-			<ul class="footer__menu">
-				<li>
-					<a class="footer__menu--title" href="">Customer service</a>
-				</li>
-				<li>
-					<a class="footer__menu--link" href="">Contact us</a>
-				</li>
-				<li>
-					<a class="footer__menu--link" href="">Help/FAQ</a>
-				</li>
-				<li>
-					<a class="footer__menu--link" href="">Shipping</a>
-				</li>
-				<li>
-					<a class="footer__menu--link" href="">Returns</a>
-				</li>
-				<li>
-					<a class="footer__menu--link" href="">Size guide</a>
-				</li>
-				<li>
-					<a class="footer__menu--link" href="">Holiday shopping</a>
+					<a class="footer-menu__link my-account__link" href="">Gift cards</a>
 				</li>
 			</ul>
 		</div>
-		<div class="footer__menu--3">
-			<ul class="footer__menu">
+		<div class="footer-menu footer-menu--2">
+			<ul class="footer-menu footer-menu--2 service">
 				<li>
-					<a class="footer__menu--title" href="">Miscellaneous</a>
+					<a class="footer-menu__title service__title" href="">Customer service</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">About Us</a>
+					<a class="footer-menu__link service__link" href="">Contact us</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Careers</a>
+					<a class="footer-menu__link service__link" href="">Help/FAQ</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Privacy Policy</a>
+					<a class="footer-menu__link service__link" href="">Shipping</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Terms & Conditions</a>
+					<a class="footer-menu__link service__link" href="">Returns</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Ethical Policy</a>
+					<a class="footer-menu__link service__link" href="">Size guide</a>
 				</li>
 				<li>
-					<a class="footer__menu--link" href="">Homepage US/UK</a>
+					<a class="footer-menu__link service__link" href="">Holiday shopping</a>
 				</li>
 			</ul>
 		</div>
-		<div class="footer__menu--4">
-			<div class="footer__menu--title">
+		<div class="footer-menu footer-menu--3">
+			<ul class="footer-menu footer-menu--3 misc">
+				<li>
+					<a class="footer-menu__title misc__title" href="">Miscellaneous</a>
+				</li>
+				<li>
+					<a class="footer-menu__link misc__link" href="">About Us</a>
+				</li>
+				<li>
+					<a class="footer-menu__link misc__link" href="">Careers</a>
+				</li>
+				<li>
+					<a class="footer-menu__link misc__link" href="">Privacy Policy</a>
+				</li>
+				<li>
+					<a class="footer-menu__link misc__link" href="">Terms & Conditions</a>
+				</li>
+				<li>
+					<a class="footer-menu__link misc__link" href="">Ethical Policy</a>
+				</li>
+				<li>
+					<a class="footer-menu__link misc__link" href="">Homepage US/UK</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-menu footer-menu--4">
+			<div class="footer-menu__title">
 				Newsletter sign up
 			</div>
-			<div class="footer__menu--link">
+			<div class="footer-menu__link">
 				<a href="/">
 					Get 10% Off Your Next Order!
 				</a>
@@ -275,10 +275,10 @@
 		<address class="footer__address">
 			© 2019 Axion. All rights reserved.
 		</address>
-		<div class="footer__sign">
-			<div class="footer__sign--1">Разработано в</div>
-			<div class="footer__sign--2">WebHero</div>
-			<div class="footer__sign--3">School</div>
+		<div class="footer__sign sign">
+			<div class="sign sign--1">Разработано в</div>
+			<div class="sign sign--2">WebHero</div>
+			<div class="sign sign--3">School</div>
 		</div>
 	</footer>
 </body>
