@@ -1,3 +1,7 @@
+body  {
+	font-family: 'Gotham Pro';
+}
+
 /*Margins*/
 
 .body  {
@@ -27,6 +31,17 @@
 .right-side  {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap-reverse;
+}
+
+.right-side__login, .right-side__cart, .right-side__lang  {
+	margin: 0 0 0 35px;
+}
+
+.right-side__lang  {
+	padding: 0;
+	border: none;
+	background: none;
 }
