@@ -1,0 +1,32 @@
+/*Margins*/
+
+.body  {
+	margin: 37px 6.12%;
+}
+
+/*Header*/
+
+.header  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+
+.left-side  {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.menu__link  {
+	margin: 0 0 0 35px;
+}
+
+.right-side  {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}

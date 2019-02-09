@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- Планирую выполнить проект качественно, так, как это должен был бы делать разработчик в реальности. Скажем, фрилансер. Потому что внутри компании наверняка имеются корпоративные правила, которые нужно соблюдать и трудно воспроизвести в учебном задании. Поэтому прошу оценивать все максимально критически и с позиции функциональности кода. Заранее благодарю за внимание. -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Axion
+	</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+	<div class="body">
+		<header class="header">
+			<div class="left-side">
+				<div class="logo">
+					<img src="pics/Axion-logo-1.png" alt="">
+				</div>
+				<nav class="menu">
+					<a class="menu__link" href="/">shop</a>
+					<a class="menu__link" href="/">news</a>
+					<a class="menu__link" href="/">team</a>
+					<a class="menu__link" href="/">legacy</a>
+					<a class="menu__link" href="/">help</a>
+				</nav>
+			</div>
+			<div class="right-side">
+				<form class="search"> 
+					<input type="search" name="search-area">
+					<input type="image" name="search-button" src="pics/Vector.png" alt="Search">
+				</form>
+				<a class="right-side__login" href="/">sign in</a>
+				<a class="right-side__cart" href="/">cart</a>
+				<!--Хочу позже убрать эту строку в CSS и сделать число псевдоэлементом after <span class="right-side__cart-items">1</span> -->
+				<a href="/"><img src="pics/us-flag.png" alt="Eng version" style="width:21px;height:14px;"></a>
+			</div>
+		</header>
+		<div class="top-img">
+			<h1 class="top-img__title">
+				Legendary footwear reborn.
+			</h1>
+			<div class="top-img__subtitle link-with-arrow"> 
+				shop now
+			</div>
+		</div>
+		<section class="content">
+			<h2 class="content__title page-title">
+				Featured product
+			</h2>
+			<div class="content__items items">
+				<img class="items__pic" src="pics/foot1.png" alt="">
+				<h4 class="items__name">Atlas Black/Rasta Axion</h4>
+				<div class="items__price">$89.00</div>
+				<div class="items__color-box color-box">
+					<a href=""><span class="color-box__item color-box__item--grey"></span></a>
+					<a href=""><span class="color-box__item color-box__item--black color-box__item--active"></span></a>
+					<a href=""><span class="color-box__item color-box__item--red"></span></a>
+					<a href=""><span class="color-box__item color-box__item--yellow"></span></a>
+				</div>
+			</div>
+			<div class="content__items items">
+				<img class="items__pic" src="pics/foot2.png" alt="">
+				<h4 class="items__name">Camel/Chili Pepper Axion</h4>
+				<div class="items__price">$74.00</div>
+				<div class="items__color-box color-box">
+					<a href=""><span class="color-box__item color-box__item--grey"></span></a>
+					<a href=""><span class="color-box__item color-box__item--beige color-box__item--active"></span></a>
+					<a href=""><span class="color-box__item color-box__item--red"></span></a>
+					<a href=""><span class="color-box__item color-box__item--yellow"></span></a>
+				</div>
+			</div>
+			<div class="content__items items">
+				<img class="items__pic" src="pics/foot3.png" alt="">
+				<h4 class="items__name">Mandel Smoke/Rust Axion</h4>
+				<div class="items__price">$69.00</div>
+				<div class="items__color-box color-box">
+					<a href=""><span class="color-box__item color-box__item--grey"></span></a>
+					<a href=""><span class="color-box__item color-box__item--brown color-box__item--active"></span></a>
+					<a href=""><span class="color-box__item color-box__item--navy"></span></a>
+					<a href=""><span class="color-box__item color-box__item--yellow"></span></a>
+				</div>
+			</div>
+			<div class="content__items items">
+				<img class="items__pic" src="pics/foot4.png" alt="">
+				<h4 class="items__name">Cloud/Elecric Blue Axion</h4>
+				<div class="items__price">$69.00</div>
+				<div class="items__color-box color-box">
+					<a href=""><span class="color-box__item color-box__item--grey"></span></a>
+					<a href=""><span class="color-box__item color-box__item--blue color-box__item--brown-active"></span></a>
+					<a href=""><span class="color-box__item color-box__item--red"></span></a>
+					<a href=""><span class="color-box__item color-box__item--yellow"></span></a>
+				</div>
+			</div>
+		</section>
+		<section class="promo">
+			<div class="promo__video">
+				<img src="pics/video.png" alt="">
+			</div>
+			<div class="promo__text">
+				<h2 class="promo__title page-title">
+					<!-- УКАЗАТЬ КОЛОР ДЛЯ КЛАССОВ -->
+					Legendary footware reborn
+				</h2>
+				<div class="promo__text">
+					We are a brand with a historyand are relaunching for 2019. We've been a part of the skater's family ever since it's early teenage years. And now we presentate a new footware collection.
+				</div>
+				<div class="promo__link link-with-arrow">
+					learn more
+				</div>
+			</div>
+		</section>
+		<section class="stories">
+			<h2 class="stories__title page-title">
+				Recent stories
+			</h2>
+			<div class="stories__first">
+				<img class="stories__pic" src="pics/anagoa.png" alt="">
+				<h3 class="stories__subtitle">
+					Presents Justin Anagoa
+				</h3>
+				<div class="stories__text">
+					Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
+				</div>
+				<div class="stories__footer stories-footer">
+					<div class="stories-footer__link link-with-arrow">
+						learn more
+					</div>
+					<div class="stories-footer__date">
+						11.08.2018
+					</div>
+				</div>
+			</div>
+			<div class="stories__second">
+				<img class="stories__pic" src="pics/reynoldes.png" alt="">
+				<h3 class="stories__subtitle">
+					First Frontside flip
+				</h3>
+				<div class="stories__text">
+					Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.
+				</div>
+				<div class="stories__footer stories-footer">
+					<div class="stories-footer__link link-with-arrow">
+						learn more
+					</div>
+					<div class="stories-footer__date">
+						17.08.2018
+					</div>
+				</div>
+			</div>
+			<div class="stories__third">
+				<img class="stories__pic" src="pics/baekkel.png" alt="">
+				<h3 class="stories__subtitle">
+					Kevin Baekkel is Pro
+				</h3>
+				<div class="stories__text">
+					Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.
+				</div>
+				<div class="stories__footer stories-footer">
+					<div class="stories-footer__link link-with-arrow">
+						learn more
+					</div>
+					<div class="stories-footer__date">
+						29.07.2018
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<h2 class="gallery__tag">#axionfootwear</h2>
+			<div class="gallery__pics">
+				<img src="pics/gal1.png" alt="">
+				<img src="pics/gal2.png" alt="">
+				<img src="pics/gal3.png" alt="">
+				<img src="pics/gal4.png" alt="">
+				<img src="pics/gal5.png" alt="">
+				<img src="pics/gal6.png" alt="">
+				<img src="pics/gal7.png" alt="">
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<nav class="footer-menu">
+			<a class="footer-menu__title" href="">My account</a>
+			<a class="footer-menu__link" href="">Login</a>
+			<a class="footer-menu__link" href="">Wish List</a>
+			<a class="footer-menu__link" href="">Order History</a>
+			<a class="footer-menu__link" href="">Track Order</a>
+			<a class="footer-menu__link" href="">Gift cards</a>
+		</nav>
+		<nav class="footer-menu">
+			<a class="footer-menu__title" href="">Customer service</a>
+			<a class="footer-menu__link" href="">Contact us</a>
+			<a class="footer-menu__link" href="">Help/FAQ</a>
+			<a class="footer-menu__link" href="">Shipping</a>
+			<a class="footer-menu__link" href="">Returns</a>
+			<a class="footer-menu__link" href="">Size guide</a>
+			<a class="footer-menu__link" href="">Holiday shopping</a>
+		</nav>
+		<nav class="footer-menu">
+			<a class="footer-menu__title" href="">Miscellaneous</a>
+			<a class="footer-menu__link" href="">About Us</a>
+			<a class="footer-menu__link" href="">Careers</a>
+			<a class="footer-menu__link" href="">Privacy Policy</a>
+			<a class="footer-menu__link" href="">Terms & Conditions</a>
+			<a class="footer-menu__link" href="">Ethical Policy</a>
+			<a class="footer-menu__link" href="">Homepage US/UK</a>
+		</nav>
+		<nav class="footer-menu">
+			<a class="footer-menu__title" href="">Newsletter sign up</a>
+			<a class="footer-menu__link" href="">Get 10% Off Your Next Order!</a>
+			<button class="footer-menu__button"></button>
+			<div class="footer-menu__social social">
+				<span class="social__fb"><img src="pics/fb.png" alt=""></span>
+				<span class="social__tw"><img src="pics/tw.png" alt=""></span>
+				<span class="social__insta"><img src="pics/insta.png" alt=""></span>
+				<span class="social__pin"><img src="pics/pin.png" alt=""></span>
+			</div>
+		</nav>
+		<address class="footer__address">
+			© 2019 Axion. All rights reserved.
+		</address>
+		<div class="footer__sign-box sign-box">
+			<div class="sign-box__item sign-box__item--developed">Разработано в</div>
+			<h2 class="sign-box__item sign-box__item--logo">WebHero</h2>
+			<div class="sign-box__item sign-box__item--school">School</div>
+		</div>
+	</footer>
+</body>
+</html>
