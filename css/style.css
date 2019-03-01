@@ -64,23 +64,24 @@ div, section, h1, h2  {
 }
 
 .right-side__cart-items  {
-	width: 1.4em;
-	height: 1.4em;
+	width: 15px;
+	height: 15px;
 	margin-left: 5px;
-	line-height: 1.4em;
+	line-height: 15px;
 	vertical-align: middle;
 	color: #fff;
 	text-align: center;
 	font-weight: bold;
 	font-size: 10px;
 	background-color: #000;
-	border-radius: 60px;
+	border-radius: 50%;
 }
 
 .right-side__lang  {
 	padding: 0;
 	border: none;
 	background: none;
+	cursor: pointer;
 }
 
 .burger {
